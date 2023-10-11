@@ -13,10 +13,11 @@ const EmailSection = () => {
             <p className='text-zinc-200 mb-4 max-w-md'>Connect with me if you want to know miscellaneous facts, like how bees take roughly <em>5 to 35 minutes</em> to migrate their entire colony when looking for better real estate. Want to know more weird facts? Maybe even learn more about web development, or about me? Let's connect!</p>
             <div className='flex flex-row gap-10'></div>
                 <Link href="https://github.com/HazelWebDev">
-                    <Image src={Github} alt='Github icon'></Image>
+                    <Image src={Github} alt="Github icon"></Image>
                 </Link>
                 <Link href="https://www.linkedin.com/in/kristen-roggero/">
-                    <Image src={Linkedin} alt='LinkedIn icon'></Image>
+                    <Image src={Linkedin} alt='LinkedIn icon
+                    ></Image>
                 </Link>
         </div>
         <div>

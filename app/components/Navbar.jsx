@@ -37,7 +37,7 @@ const Navbar = () => {
 
         <Link href="/" className="text-pink-400 font-semibold ">
           <h3 className="font-bold text-2xl items-center">
-            Kristen's Portfolio
+            Kristens Portfolio
           </h3>
         </Link>
         <div className=" mobile-menu block md:hidden">

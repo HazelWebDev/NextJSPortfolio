@@ -17,7 +17,7 @@ const navLinks = [
     },
     {
         title: "Resume",
-        path: "#resume",
+        path: "/resume",
     }
 ]
 
@@ -25,11 +25,11 @@ const Navbar = () => {
     const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
-    <nav className='fixed top-0 left-0 right-0 z-10 bg-zinc-600 bg-opacity-90 border-b-4 border-green-400'>
+    <nav className='fixed top-0 left-0 right-0 z-10 bg-pink-200 bg-opacity-90 border-b-4 border-green-400'>
         <div className='flex flex-wrap items-center justify-between mx-auto px-4 py-4'>
         <Image className="" src="/FlowerLogo2.svg" width={75} height={75}/>
 
-            <Link href="/" className="text-pink-400 font-semibold "><h3 className='font-bold text-2xl items-center'>Kristen's Portfolio</h3></Link>
+            <Link href="/" className="text-zinc-600 font-bold "><h3 className='font-bold text-2xl items-center'>Kristen's Portfolio</h3></Link>
            <div className=' mobile-menu block md:hidden'>
             {
                 !navbarOpen ? (

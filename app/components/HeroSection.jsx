@@ -2,7 +2,7 @@
 import React from 'react'
 import Image from 'next/image'
 import { TypeAnimation } from 'react-type-animation';
-
+import Link from 'next/link';
 
 const HeroSection = () => {
   return (
@@ -29,12 +29,15 @@ const HeroSection = () => {
                         repeat={Infinity}
                         />
                 </h1>
-                <p className='text-pink-200 mb-6 sm:text-lg'>Something, something else...</p>
+                <p className='text-pink-200 mb-6 sm:text-lg'>A coder, crochet artist, and computer enthusiast!</p>
                 <div className='mb-6'>
                     <button className='mb-6 px-6 py-3 rounded-full w-full sm:w-fit mr-4 bg-gradient-to-br from-green-300 to-pink-300 text-zinc-800 font-semibold'>
                         Contact Me</button>
                     <button className='px-1 py-1 rounded-full w-full sm:w-fit mr-4 bg-gradient-to-br from-green-300 to-pink-300 text-pink-400 font-semibold'>
-                        <span className='block bg-black hover:bg-zinc-700 rounded-full px-5 py-2'>Check out my resume</span></button>
+                        <span className='block bg-black hover:bg-zinc-700 rounded-full px-5 py-2'>
+                            <Link href="/resume">Check out my resume!</Link>
+                        </span>
+                    </button>
                 </div>
             </div>
             <div className='col-span-5 place-self-center mt-4 lg:mt-0'>

@@ -5,7 +5,7 @@ import AboutSection from './components/AboutSection'
 import ProjectSection from './components/ProjectSection'
 import EmailSection from './components/EmailSection'
 import Footer from './components/Footer'
-import Resume from './components/Resume'
+import Resume from './resume/resume'
 
 export default function Home() {
   return (
@@ -16,7 +16,7 @@ export default function Home() {
         <AboutSection />
         <ProjectSection />
         <EmailSection />
-        {/* <Resume /> */}
+        <Resume />
      </div>
      <Footer />
     </main>

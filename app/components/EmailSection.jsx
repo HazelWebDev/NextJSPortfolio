@@ -1,11 +1,42 @@
+
+"use client"
 import React from "react";
 import Github from "public/Github.svg";
 import Linkedin from "public/Linkedin.svg";
 import Link from "next/link";
 import Image from "next/image";
+import emailjs from "@emailjs/browser";
+import { useEffect, useState } from "react";
+import { useRef } from "react";
 
-const EmailSection = () => {
+
+const Contact = () => {
+  
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_2s7i0rx",
+        "template_umi7pei",
+        form.current,
+        "B_-VcSiGEY9BnUUXT"
+      )
+      .then(
+        () => {
+          alert("Message successfully sent!");
+          window.location.reload(false);
+        },
+        () => {
+          alert("Failed to send the message, please try again");
+        }
+      );
+  };
+
   return (
+    <>
     <section
       id="contact"
       className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative"
@@ -28,9 +59,19 @@ const EmailSection = () => {
           <Image src={Linkedin} alt="LinkedIn icon"></Image>
         </Link>
       </div>
-      <div>
-        <form className="flex flex-col">
-          <div className="mb-6">
+
+      <div className="container contact-page">
+        <div className="text-zone">
+          <h1 className="text-pink-400 text-xl font-bold">
+            Email Me Today!
+          </h1>
+          <p className="mb-5 text-zinc-200">
+            Want to connect? Have any questions? Simply want to leave a comment? You can reach me
+            by filing out this form below.
+          </p>
+          <div className="contact-form">
+            <form ref={form} onSubmit={sendEmail}>
+            <div className="mb-6">
             <label
               htmlFor="email"
               className="text-pink-400 block mb-2 text-sm font-medium"
@@ -73,20 +114,23 @@ const EmailSection = () => {
               name="message"
               id="message"
               placeholder="Let's talk about..."
-              className="bg-zinc-300 border border-white placeholder-zinc-500 text-slate-400 text-sm rounded-lg block w-full p-2.5 mb-4"
-            ></textarea>
+              className="bg-zinc-300 border border-white placeholder-zinc-500 text-slate-400 text-sm rounded-lg block w-full p-2.5 mb-5"            ></textarea>
 
             <button
               type="submit"
+              value="SEND"
               className="bg-pink-400 hover:bg-green-400 font-medium text-white py-2.5 px-5 rounded-lg w-full"
             >
               Send
             </button>
           </div>
-        </form>
+            </form>
+          </div>
+        </div>
       </div>
-    </section>
+      </section>
+    </>
   );
 };
 
-export default EmailSection;
+export default Contact;

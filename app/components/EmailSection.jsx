@@ -70,7 +70,7 @@ const Contact = () => {
             by filing out this form below.
           </p>
           <div className="contact-form">
-            <form ref={form} onSubmit={sendEmail}>
+            {/* <form ref={form} onSubmit={sendEmail}>
             <div className="mb-6">
             <label
               htmlFor="email"
@@ -123,8 +123,8 @@ const Contact = () => {
             >
               Send
             </button>
-          </div>
-            </form>
+            </div>
+            </form> */}
           </div>
         </div>
       </div>

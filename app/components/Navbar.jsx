@@ -7,10 +7,10 @@ import MenuOverlay from './MenuOverlay'
 import Image from 'next/image'
 
 const navLinks = [
-    {
-        title: "About",
-        path: "#about",
-    },
+    // {
+    //     title: "About",
+    //     path: "#about",
+    // },
     {
         title: "Projects",
         path: "#projects",

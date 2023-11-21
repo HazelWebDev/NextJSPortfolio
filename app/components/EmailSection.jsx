@@ -11,12 +11,9 @@ import { useRef } from "react";
 
 
 const Contact = () => {
-  
   const form = useRef();
-
   const sendEmail = (e) => {
     e.preventDefault();
-
     emailjs
       .sendForm(
         "service_2s7i0rx",
@@ -70,7 +67,7 @@ const Contact = () => {
             by filing out this form below.
           </p>
           <div className="contact-form">
-            {/* <form ref={form} onSubmit={sendEmail}>
+            <form ref={form} onSubmit={sendEmail}>
             <div className="mb-6">
             <label
               htmlFor="email"
@@ -124,7 +121,7 @@ const Contact = () => {
               Send
             </button>
             </div>
-            </form> */}
+            </form>
           </div>
         </div>
       </div>

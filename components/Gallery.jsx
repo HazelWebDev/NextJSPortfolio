@@ -16,32 +16,37 @@ const files = [
   {
     title: "Crochet Monstera",
     size: "Black and Green Leaves",
-    source: "Monstera1.png",
+    source: "1.png",
   },
   {
     title: "Crochet Monstera",
     size: "Pink and Green Leaves",
-    source: "SoH1.jpeg",
+    source: "2.jpeg",
   },
   {
     title: "Crochet Donkey Tail",
     size: "Pink and Vibrant Leaves",
-    source: "Curly1.jpeg",
+    source: "7.jpeg",
   },
   {
     title: "Crochet Donkey Tail",
     size: "Pink and Vibrant Leaves",
-    source: "Monstera2.jpeg",
+    source: "3.jpeg",
   },
   {
     title: "Crochet Donkey Tail",
     size: "Pink and Vibrant Leaves",
-    source: "SoH2.jpeg",
+    source: "4.jpeg",
   },
   {
     title: "Crochet Donkey Tail",
     size: "Pink and Vibrant Leaves",
-    source: "Monstera3.jpeg",
+    source: "5.jpeg",
+  },
+  {
+    title: "Crochet Donkey Tail",
+    size: "Pink and Vibrant Leaves",
+    source: "6.jpeg",
   },
 ];
 
@@ -52,7 +57,7 @@ export default function Gallery() {
         Say Hello to my Crochet Plant Gallery!
       </h1>
       <p className="text-secondary text-center mb-10 pt-2 pb-8 sm:text-lg">
-        plants that you don't have to worry about!
+        plants that you don&apos;t have to worry about!
       </p>
       <ul
         role="list"

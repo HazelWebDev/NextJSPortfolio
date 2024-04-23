@@ -15,11 +15,6 @@
 const files = [
   {
     title: "Crochet Monstera",
-    size: "Black and Green Leaves",
-    source: "1.png",
-  },
-  {
-    title: "Crochet Monstera",
     size: "Pink and Green Leaves",
     source: "2.png",
   },

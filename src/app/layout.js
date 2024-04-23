@@ -6,6 +6,7 @@ const agbalumo = Agbalumo({
   subsets: ["latin"],
   weight: "400",
   variable: "--font-agbalumo",
+  display: "swap",
 });
 const dosis = Dosis({
   subsets: ["latin"],

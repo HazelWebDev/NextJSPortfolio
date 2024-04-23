@@ -21,32 +21,32 @@ const files = [
   {
     title: "Crochet Monstera",
     size: "Pink and Green Leaves",
-    source: "2.jpeg",
+    source: "2.png",
   },
   {
     title: "Crochet Donkey Tail",
     size: "Pink and Vibrant Leaves",
-    source: "7.jpeg",
+    source: "7.png",
   },
   {
     title: "Crochet Donkey Tail",
     size: "Pink and Vibrant Leaves",
-    source: "3.jpeg",
+    source: "3.png",
   },
   {
     title: "Crochet Donkey Tail",
     size: "Pink and Vibrant Leaves",
-    source: "4.jpeg",
+    source: "4.png",
   },
   {
     title: "Crochet Donkey Tail",
     size: "Pink and Vibrant Leaves",
-    source: "5.jpeg",
+    source: "5.png",
   },
   {
     title: "Crochet Donkey Tail",
     size: "Pink and Vibrant Leaves",
-    source: "6.jpeg",
+    source: "6.png",
   },
 ];
 

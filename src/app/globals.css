@@ -31,3 +31,7 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.font-primary {
+  font-family: "Agbalumo", sans-serif; /* Use Agbalumo font as primary */
+}

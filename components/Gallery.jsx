@@ -15,28 +15,29 @@
 const files = [
   {
     title: "Crochet Monstera",
-    size: "Black and Green Leaves",
-    source: "1.png",
-  },
-  {
-    title: "Crochet Monstera",
-    size: "Pink and Green Leaves",
+    size: "Soft White with Lime Monsteras",
     source: "2.png",
   },
   {
     title: "Crochet Donkey Tail",
-    size: "Pink and Vibrant Leaves",
-    source: "7.png",
+    size: "Spring Green with Dark Vines",
+    source: "1.png",
   },
+  // {
+  //   title: "Crochet Donkey Tail",
+  //   size: "Pink and Vibrant Leaves",
+  //   source: "7.png",
+  // },
   {
-    title: "Crochet Donkey Tail",
-    size: "Pink and Vibrant Leaves",
-    source: "3.png",
-  },
-  {
-    title: "Crochet Donkey Tail",
-    size: "Pink and Vibrant Leaves",
+    title: "A Crocheted String of Hearts",
+    size: "Snow White and Sage Hearts",
     source: "4.png",
+  },
+
+  {
+    title: "Heart Seeker's Plant",
+    size: "Soft Pink and Fern Green",
+    source: "6.png",
   },
   {
     title: "Crochet Donkey Tail",
@@ -46,7 +47,7 @@ const files = [
   {
     title: "Crochet Donkey Tail",
     size: "Pink and Vibrant Leaves",
-    source: "6.png",
+    source: "3.png",
   },
 ];
 

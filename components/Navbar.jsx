@@ -26,7 +26,7 @@ const Navbar = () => {
           height={75}
         />
 
-        <Link href="/" className="text-dark font-bold ">
+        <Link href="/" className="text-dark font-bold font-primary">
           <h3 className="font-bold text-2xl items-center">
             Kristen&apos;s Portfolio
           </h3>
@@ -48,18 +48,20 @@ const Navbar = () => {
             </button>
           )}
         </div>
-        <div className="menu hidden md:block md:w-auto" id="navbar">
-          <ul className="flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0 text-dark">
-            <li className="px-10">
+        <div className="menu hidden md:flex md:w-auto" id="navbar">
+          <ul className="flex p-4 sm:p-1 md:p-2 md:flex-row md:space-x-8 mt-0 text-dark font-primary">
+            <li>
               <Link
                 href={"/resume"}
-                className="block py-2 pl-3 pr-4 text-dark font-semibold sm:text-xl md:p-0 hover:text-primary border-b border-primary"
+                className="block py-2 text-dark font-semibold sm:text-xl hover:text-primary border-b border-primary"
               >
                 Resume
               </Link>
+            </li>
+            <li>
               <Link
                 href={"/about"}
-                className="block py-2 pl-3 pr-4 text-dark font-semibold sm:text-xl md:p-0 hover:text-primary border-b border-primary"
+                className="block py-2 px-2 text-dark font-semibold sm:text-xl hover:text-primary border-b border-primary"
               >
                 About Me
               </Link>

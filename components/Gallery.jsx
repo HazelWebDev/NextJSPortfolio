@@ -4,12 +4,12 @@ const files = [
   {
     title: "Crochet Monstera",
     size: "Soft White with Lime Monsteras",
-    source: "2.png",
+    source: "/2.png",
   },
   {
     title: "Crochet Donkey Tail",
     size: "Spring Green with Dark Vines",
-    source: "1.png",
+    source: "/1.png",
   },
   // {
   //   title: "Crochet Donkey Tail",
@@ -19,23 +19,23 @@ const files = [
   {
     title: "A Crocheted String of Hearts",
     size: "Snow White and Sage Hearts",
-    source: "4.png",
+    source: "/4.png",
   },
 
   {
     title: "Heart Seeker's Plant",
     size: "Soft Pink and Fern Green",
-    source: "6.png",
+    source: "/6.png",
   },
   {
     title: "Crochet Donkey Tail",
     size: "Pink and Vibrant Leaves",
-    source: "5.png",
+    source: "/5.png",
   },
   {
     title: "Crochet Donkey Tail",
     size: "Pink and Vibrant Leaves",
-    source: "3.png",
+    source: "/3.png",
   },
 ];
 
@@ -58,6 +58,8 @@ export default function Gallery() {
               <Image
                 src={file.source}
                 alt=""
+                width={400}
+                height={400}
                 className="object-cover group-hover:opacity-75 sm:h-40 sm:w-40 md:h-96 md:w-96 lg:h-96 lg:w-96 xl:h-auto xl:w-auto"
               />
 

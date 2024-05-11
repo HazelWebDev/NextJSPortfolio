@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const MenuOverlay = ({ links }) => {
   return (
-    <ul className="flex flex-col py-4 items-center">
+    <ul className="flex flex-col py-4 items-center font-primary">
       <li>
         <Link
           href={"/about"}

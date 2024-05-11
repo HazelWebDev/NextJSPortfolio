@@ -7,9 +7,9 @@ function AboutMe() {
     <div>
       <h1>About Me</h1>
       <p>
-        Hi, I'm [Your Name]! I am passionate about [Your
-        Passion/Hobbies/Interests]. I love to [What you love to do], and I'm
-        always eager to learn new things.
+        Hi, I&apos;m [Your Name]! I am passionate about [Your
+        Passion/Hobbies/Interests]. I love to [What you love to do], and
+        I&apos;m always eager to learn new things.
       </p>
       <p>
         This website is my platform to share my thoughts, experiences, and

@@ -67,7 +67,7 @@ export default function Gallery() {
         {files.map((file) => (
           <li key={file.source} className="relative">
             <div className="group aspect-h-7 aspect-w-10 block overflow-hidden rounded-lg border-2 border-secondary transition duration-300 ease-in-out hover:border-primary sm:border-2 md:border-4 lg:border-6">
-              <img
+              <Image
                 src={file.source}
                 alt=""
                 className="object-cover group-hover:opacity-75 sm:h-40 sm:w-40 md:h-96 md:w-96 lg:h-96 lg:w-96 xl:h-auto xl:w-auto"

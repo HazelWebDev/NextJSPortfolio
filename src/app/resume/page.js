@@ -1,7 +1,7 @@
 export default function Page() {
   return (
     <>
-      <div className="container mx-auto p-4 lg:p-8 bg-[#121212]">
+      <div className="container mx-auto p-4 lg:p-8 justify-center items-center">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-24">
           {/* Left Column */}
           <div className="lg:pr-4">
@@ -99,14 +99,18 @@ export default function Page() {
               <h3 className="text-xl font-semibold mb-2 underline text-primary">
                 Contact Information
               </h3>
-              <p className="text-primary font-secondary text-l2">
+              <p className="font-secondary">
                 <strong>Email:</strong> kristenroggero@gmail.com
               </p>
-              <p className="text-primary font-secondary text-l2">
+              <p className="font-secondary">
                 <strong>Phone:</strong> (341) 777-8729
               </p>
-              <p className="text-primary font-secondary text-l2">
-                <strong>LinkedIn:</strong> linkedin.com/in/your-profile
+              <p className=" font-secondary">
+                <strong>LinkedIn:</strong>
+                <a href="https://www.linkedin.com/in/kristen-roggero/">
+                  {" "}
+                  Visit Me Here
+                </a>
               </p>
             </div>
 

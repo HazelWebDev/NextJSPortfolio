@@ -8,37 +8,40 @@ const HeroSection = () => {
   return (
     <section>
       <div className="grid grid-cols-1 lg:grid-cols-12 mt-16">
-        <div className="col-span-7 place-self-center text-center sm:text-left">
-          <h1 className="text-pink-400 mb-4 text-2xl sm:text-4xl lg:text-4xl font-extrabold">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-primary">
-              Hello, I&apos;m {""}
-            </span>
-            <TypeAnimation
-              sequence={[
-                // Same substring at the start will only be typed out once, initially
-                "Kristen Roggero",
-                1000, // wait 1s before replacing "Mice" with "Hamsters"
-                "a web developer",
-                1000,
-                "an artist",
-                1000,
-                "and an optimist",
-                1000,
-              ]}
-              wrapper="span"
-              speed={50}
-              repeat={Infinity}
-            />
-          </h1>
-          <p className="text-pink-200 mb-6 sm:text-lg">
+        <div className="col-span-7 mt-24 place-self-auto sm:text-left">
+          <div>
+            <h1 className="text-purple-400 mb-4 text-2xl sm:text-4xl lg:text-4xl font-extrabold">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-primary">
+                Hello, I&apos;m {""}
+              </span>
+              <TypeAnimation
+                className="fixed"
+                sequence={[
+                  // Same substring at the start will only be typed out once, initially
+                  "Kristen Roggero",
+                  1000, // wait 1s before replacing "Mice" with "Hamsters"
+                  "a web developer",
+                  1000,
+                  "an artist",
+                  1000,
+                  "and an optimist",
+                  1000,
+                ]}
+                wrapper="span"
+                speed={50}
+                repeat={Infinity}
+              />
+            </h1>
+          </div>
+          <p className="text-purple-200 mb-6 sm:text-lg">
             A developer, tech enthusiast, and crochet artist!
           </p>
           <div className="mb-6">
-            <button className="mb-6 p-2 py-2 px-5 rounded-full w-full sm:w-fit mr-4 bg-gradient-to-br from-primary to-secondary text-dark border-4 border-white font-semibold">
+            <button className="mb-6 p-2 py-2 px-5 rounded-full w-full sm:w-fit mr-4 border-2 border-white hover:bg-gradient-to-br from-primary to-secondary text-white hover:border-white hover:border-3 hover:text-dark font-semibold">
               Contact Me
             </button>
-            <button className="p-1 rounded-full w-full sm:w-fit mr-4 bg-gradient-to-br from-secondary to-primary text-primary font-primary">
-              <span className="block bg-dark hover:bg-l1 rounded-full px-5 py-2">
+            <button className="mb-6 p-2 py-2 px-5 rounded-full w-full sm:w-fit mr-4 border-2 border-white hover:bg-gradient-to-br from-primary to-secondary text-white hover:border-white hover:border-3 hover:text-dark font-semibold">
+              <span className=" block rounded-full">
                 <Link href="/resume">Check out my resume</Link>
               </span>
             </button>

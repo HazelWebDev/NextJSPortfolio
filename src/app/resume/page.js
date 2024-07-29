@@ -1,7 +1,7 @@
 export default function Page() {
   return (
     <>
-      <div className="container mx-auto p-4 lg:p-8 bg-[#121212]">
+      <div className="flex min-h-screen flex-col bg-[#121212]">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-24">
           {/* Left Column */}
           <div className="lg:pr-4">

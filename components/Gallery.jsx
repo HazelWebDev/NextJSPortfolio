@@ -43,11 +43,11 @@ const files = [
     size: "Pink and Vibrant Leaves",
     source: "6.jpeg",
   },
-  {
-    title: "Crochet Donkey Tail",
-    size: "Pink and Vibrant Leaves",
-    source: "7.jpeg",
-  },
+  // {
+  //   title: "Crochet Donkey Tail",
+  //   size: "Pink and Vibrant Leaves",
+  //   source: "7.jpeg",
+  // },
 ];
 
 export default function Gallery() {

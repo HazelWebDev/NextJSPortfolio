@@ -15,7 +15,7 @@ module.exports = {
         secondary: ["var(--font-dosis)"],
       },
       colors: {
-        primary: "#f472b6", //pink400
+        primary: "#c084fc", //purple400
         secondary: "#4ade80", //green400
         l1: "#bbf7d0", //green200
         l2: "#fbcfe8", //pink200

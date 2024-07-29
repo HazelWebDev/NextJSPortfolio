@@ -57,7 +57,7 @@ export default function Gallery() {
         Say Hello to my Crochet Plant Gallery!
       </h1>
       <p className="text-secondary text-center mb-10 pt-2 pb-8 sm:text-lg">
-        plants that you don't have to worry about!
+        plants that you don&apos;t have to worry about!
       </p>
       <ul
         role="list"

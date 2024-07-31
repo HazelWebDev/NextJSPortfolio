@@ -62,16 +62,18 @@ const AboutSection = () => {
   };
 
   return (
-    <section className="text-white mb-20">
-      <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-8 xl:px-16 sm:items-center">
-        <Image
-          className="transform rotate-45"
-          src="/FlowerLogo1 .png"
-          alt="Kristen, but cartoon version"
-          width={500}
-          height={500}
-        />
-        <div className="mt-4 md:mt-0 text-left">
+    <section className="text-white pt-10 mb-20">
+      <div className="md:grid md:grid-cols-2 gap-8 py-8 px-4 place-self-center xl:gap-16 sm:py-8 xl:px-16 sm:items-center">
+        <div className="w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative ">
+          <Image
+            className="absolute transform rotate-45 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+            src="/FlowerLogo1 .png"
+            alt="Kristen, but cartoon version"
+            width={350}
+            height={350}
+          />
+        </div>
+        <div className="mt-4 md:mt-0 items-center text-left md:text-center sm:text-center">
           <div className="border-b border-secondary inline-block mb-3">
             <h2 className="text-4xl font-bold text-primary px-3 py-2">
               Some of my projects
@@ -85,32 +87,43 @@ const AboutSection = () => {
             resulting in a truly awesome career which called to me. I jumped
             toward it with no hesitation!
           </p>
-          <div className="flex flex-row mt-8 sm:text-left pr-4 md:text-lg lg:text-xl">
-            <TabButton
-              selectTab={() => handleTabChange("experience")}
-              active={tab === "experience"}
-            >
-              {" "}
-              Experience{" "}
-            </TabButton>
-            <TabButton
-              selectTab={() => handleTabChange("education")}
-              active={tab === "education"}
-            >
-              {" "}
-              Education{" "}
-            </TabButton>
-            <TabButton
-              selectTab={() => handleTabChange("skills")}
-              active={tab === "skills"}
-            >
-              {" "}
-              Skills{" "}
-            </TabButton>
+          <div className="flex flex-row mt-8 pr-4 md:text-lg lg:text-xl sm:justify-center sm:items-center">
+            <div className="lg:text-right md:text-right">
+              <TabButton
+                selectTab={() => handleTabChange("experience")}
+                active={tab === "experience"}
+              >
+                {" "}
+                Experience{" "}
+              </TabButton>
+              <TabButton
+                selectTab={() => handleTabChange("education")}
+                active={tab === "education"}
+              >
+                {" "}
+                Education{" "}
+              </TabButton>
+              <TabButton
+                selectTab={() => handleTabChange("skills")}
+                active={tab === "skills"}
+              >
+                {" "}
+                Skills{" "}
+              </TabButton>
+            </div>
           </div>
-          <div className="mt-8 text-left">
+          <div className="mt-8 lg:text-centet md:text-center sm:object-center">
             {tabData.find((t) => t.id === tab).content}
           </div>
+          {/* <div>
+            <Image
+              className="transform rotate-45 relative inset-0 flex"
+              src="/FlowerLogo1 .png"
+              alt="Kristen, but cartoon version"
+              width={350}
+              height={350}
+            />
+          </div> */}
         </div>
       </div>
     </section>

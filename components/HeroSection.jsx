@@ -7,15 +7,15 @@ import Link from "next/link";
 const HeroSection = () => {
   return (
     <section>
-      <div className="grid grid-cols-1 lg:grid-cols-12 mt-16">
-        <div className="col-span-7 mt-24 place-self-auto sm:text-left">
+      <div className="grid grid-cols-1 lg:grid-cols-12 md:grid-cols-3 sm:px-3 md:px-3 lg:px-3 mt-16">
+        <div className="col-span-7 lg:mt-28 lg:ml-8 p-8 lg:pl-8 place-self-auto sm:text-left">
           <div>
-            <h1 className="text-purple-400 mb-4 text-2xl sm:text-4xl lg:text-4xl font-extrabold">
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-primary">
+            <h1 className="text-purple-400 mb-4 text-2xl sm:text-4xl lg:text-4xl md:text-center sm:text-center font-extrabold">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-primary ">
                 Hello, I&apos;m {""}
               </span>
               <TypeAnimation
-                className="fixed"
+                className=""
                 sequence={[
                   // Same substring at the start will only be typed out once, initially
                   "Kristen Roggero",
@@ -33,10 +33,10 @@ const HeroSection = () => {
               />
             </h1>
           </div>
-          <p className="text-purple-200 mb-6 sm:text-lg">
+          <p className="text-purple-200 mb-6 sm:text-lg md:text-center sm:text-center">
             A developer, tech enthusiast, and crochet artist!
           </p>
-          <div className="mb-6">
+          <div className="mb-6 md:text-center sm:text-center">
             <button className="mb-6 p-2 py-2 px-5 rounded-full w-full sm:w-fit mr-4 border-2 border-white hover:bg-gradient-to-br from-primary to-secondary text-white hover:border-white hover:border-3 hover:text-dark font-semibold">
               Contact Me
             </button>

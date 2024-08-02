@@ -47,8 +47,8 @@ const HeroSection = () => {
             </button>
           </div>
         </div>
-        <div className="col-span-5 place-self-center mt-4 lg:mt-0">
-          <div className="border-4 border-green-200 rounded-full w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
+        <div className="col-span-5 place-self-center sm:justify-center mt-4 lg:mt-0">
+          <div className="border-4 border-green-200 rounded-full w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative sm:place-content-center">
             <Image
               className="absolute transform rotate-12 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
               src="/Portrait.png"
